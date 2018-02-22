@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 
 const Layout = (props) => (
     <div className={props.pageName}>
-        <Header activePage={props.pageName} />
+        <Header activePageName={props.pageName} />
         <main role="main">
           {props.children}
         </main>

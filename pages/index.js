@@ -1,7 +1,7 @@
 import Layout from '../components/Layout/Layout'
 
 const Index = () => (
-  <Layout pageName="IndexPage">
+  <Layout pageName="PageHome">
     The homepage content goes here.
   </Layout>
 )

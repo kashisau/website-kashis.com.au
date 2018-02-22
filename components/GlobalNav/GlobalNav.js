@@ -1,16 +1,12 @@
-import Link from 'next/link'
+import MainMenuLink from './MainMenuLink';
 
-const linkStyle = {
-
-}
-
-const GlobalNav = () => (
+const GlobalNav = (props) => (
   <ul className="GlobalNav--menu">
-    <li><Link href="/"><a style={linkStyle}>Home</a></Link></li>
-    <li><Link href="/about"><a style={linkStyle}>About</a></Link></li>
-    <li><Link href="/contact"><a style={linkStyle}>Contact</a></Link></li>
-    <li><Link href="/blog"><a style={linkStyle}>Blog</a></Link></li>
+    <MainMenuLink linkName="PageHome" href="/" {...props}>Home</MainMenuLink>
+    <MainMenuLink linkName="PageAbout" href="/about" {...props}>About</MainMenuLink>
+    <MainMenuLink linkName="PageContact" href="/contact" {...props}>Contact</MainMenuLink>
+    <MainMenuLink linkName="PageBlog" href="/blog" {...props}>Blog</MainMenuLink>
   </ul>
-);
+)
 
 export default GlobalNav;

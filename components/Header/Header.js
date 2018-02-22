@@ -6,7 +6,7 @@ const Header = (props) => (
   <header className="Header">
       <Logo />
       <nav className="GlobalNav">
-        <GlobalNav />
+        <GlobalNav {...props} />
       </nav>
   </header>
 );
