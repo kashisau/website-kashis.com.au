@@ -1,5 +1,6 @@
 import License from '../License/License'
 import Header from '../Header/Header'
+import '../../styles/global.scss'
 
 const Layout = (props) => (
     <div className={props.pageName}>
@@ -10,11 +11,6 @@ const Layout = (props) => (
         <footer>
             <License />
         </footer>
-        <style jsx global>{`
-          body {
-            background-color: #f3f3f3;
-          }
-        `}</style>
     </div>
 )
 

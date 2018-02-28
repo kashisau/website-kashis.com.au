@@ -1,0 +1,19 @@
+$base-colours: (
+  Page__background:       #f3f3f3,
+  Link__text:             #f30000,
+);
+
+$colour-modifiers: (
+  Link__text-hover:     lighten(map-get($base-colours, Link__text), 20%),
+  Link__text-down:      darken(map-get($base-colours, Link__text), 20%)
+);
+
+$colours: map-merge($base-colours, $colour-modifiers);
+
+@function colour($colour) {
+  @if not map-has-key($colours, $colour) {
+    @warn "No color found for #{$colour} in $colors map.";
+  }
+
+  @return map-get($colours, $colour);
+}
