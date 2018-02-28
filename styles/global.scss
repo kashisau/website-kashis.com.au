@@ -8,5 +8,11 @@ html, body {
 }
 
 a {
-  color: $main-highlight;
+  color: colour(Link__text);
+  &:hover {
+    color: colour(Link__text-hover);
+  }
+  &:active {
+    color: colour(Link__text-down);
+  }
 }
