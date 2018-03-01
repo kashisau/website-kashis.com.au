@@ -1,6 +1,6 @@
 import License from '../License/License'
 import Header from '../Header/Header'
-import '../../styles/global.scss'
+import '../../styles/styles.scss'
 
 const Layout = (props) => (
     <div className={props.pageName}>
